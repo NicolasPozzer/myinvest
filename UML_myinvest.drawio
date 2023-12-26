@@ -1,0 +1,22 @@
+<mxfile host="app.diagrams.net" modified="2023-12-26T11:59:06.885Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/120.0.0.0 Safari/537.36" etag="9n1bKxpiNja0R5RMu_ER" version="22.1.11" type="device">
+  <diagram name="Page-1" id="e7e014a7-5840-1c2e-5031-d8a46d1fe8dd">
+    <mxGraphModel dx="677" dy="402" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="1169" pageHeight="826" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="hzULQrv4zRO577tfZUYZ-41" value="Inversion" style="swimlane;fontStyle=1;align=center;verticalAlign=top;childLayout=stackLayout;horizontal=1;startSize=26;horizontalStack=0;resizeParent=1;resizeParentMax=0;resizeLast=0;collapsible=1;marginBottom=0;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="460" y="440" width="180" height="230" as="geometry" />
+        </mxCell>
+        <mxCell id="hzULQrv4zRO577tfZUYZ-42" value="- id: Long&lt;br&gt;- nombre: String&lt;br&gt;- precioEntrada: Double&lt;br&gt;- cantInvertido: Double" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="hzULQrv4zRO577tfZUYZ-41">
+          <mxGeometry y="26" width="180" height="74" as="geometry" />
+        </mxCell>
+        <mxCell id="hzULQrv4zRO577tfZUYZ-43" value="" style="line;strokeWidth=1;fillColor=none;align=left;verticalAlign=middle;spacingTop=-1;spacingLeft=3;spacingRight=3;rotatable=0;labelPosition=right;points=[];portConstraint=eastwest;strokeColor=inherit;" vertex="1" parent="hzULQrv4zRO577tfZUYZ-41">
+          <mxGeometry y="100" width="180" height="10" as="geometry" />
+        </mxCell>
+        <mxCell id="hzULQrv4zRO577tfZUYZ-44" value="+ listaInversiones: &amp;lt;List&amp;gt;&lt;br&gt;+ saveInversion: String&lt;br&gt;+ deleteInversion: String&lt;br&gt;+ findInversion: String&lt;br&gt;+ editInversion: String&lt;br&gt;+ precioEntradaProm: String&lt;br&gt;+ totalDeCartera: String" style="text;strokeColor=none;fillColor=none;align=left;verticalAlign=top;spacingLeft=4;spacingRight=4;overflow=hidden;rotatable=0;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;whiteSpace=wrap;html=1;" vertex="1" parent="hzULQrv4zRO577tfZUYZ-41">
+          <mxGeometry y="110" width="180" height="120" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
