@@ -26,7 +26,7 @@ public class InversionController {
     }
 
     @DeleteMapping("/inversiones/borrar/{id}")
-    public String deleteInversion(@RequestParam Long id){
+    public String deleteInversion(@PathVariable Long id){
         inversionServ.deleteInversion(id);
         return "Inversion Eliminada!";
     }
