@@ -32,7 +32,7 @@ public class InversionController {
     }
 
     @GetMapping("/inversiones/traer/{id}")
-    public Inversion findInversion(@RequestParam Long id){
+    public Inversion findInversion(@PathVariable Long id){
         return inversionServ.findInversion(id);
     }
 
@@ -43,4 +43,14 @@ public class InversionController {
     }
 
     //Other methods...
+
+    @GetMapping("/inversiones/total")
+    public Double totalInversionEnCartera(){
+        return inversionServ.totalInversionEnCartera();
+    }
+
+    @GetMapping("/inversiones/promentrada/{nombreMoneda}")
+    public Double precioEntradaPromedio(@PathVariable String nombreMoneda){
+        return inversionServ.precioEntradaPromedio(nombreMoneda);
+    }
 }

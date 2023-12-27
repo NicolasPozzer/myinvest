@@ -39,4 +39,34 @@ public class InversionService implements iInversionService{
     public void editInversion(Inversion inversion) {
         this.saveInversion(inversion);
     }
+
+    @Override
+    public Double totalInversionEnCartera() {
+        Double acumTotal = 0.0;
+
+        for (Inversion inversion : getInversiones()){
+            acumTotal = acumTotal + inversion.getCantInvertida();
+        }
+        return acumTotal;
+    }
+
+    @Override
+    public Double precioEntradaPromedio(String nombreMoneda) {
+        Double acumMonto = 0.0;
+        Double acumPrecioPonderado = 0.0;
+
+        for (Inversion inversion : getInversiones()) {
+            if (nombreMoneda.toUpperCase().equals(inversion.getNombre())) {
+                acumMonto += inversion.getCantInvertida();
+                acumPrecioPonderado += inversion.getPrecioEntrada() * inversion.getCantInvertida();
+            }
+        }
+
+        if (acumMonto == 0.0) {
+            // Manejar el caso donde no hay inversiones para la moneda dada
+            return 0.0; // o puedes devolver null u otro valor según tu lógica
+        }
+
+        return acumPrecioPonderado / acumMonto;
+    }
 }

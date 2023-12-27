@@ -14,4 +14,8 @@ public interface iInversionService {
     public Inversion findInversion(Long id);
 
     public void editInversion(Inversion inversion);
+
+    public Double totalInversionEnCartera();
+
+    public Double precioEntradaPromedio(String nombreMoneda);
 }
