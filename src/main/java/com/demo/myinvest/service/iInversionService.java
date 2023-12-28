@@ -17,5 +17,7 @@ public interface iInversionService {
 
     public Double totalInversionEnCartera();
 
+    public Double totalInversionPorMoneda(String nombreMoneda);
+
     public Double precioEntradaPromedio(String nombreMoneda);
 }

@@ -51,6 +51,17 @@ public class InversionService implements iInversionService{
     }
 
     @Override
+    public Double totalInversionPorMoneda(String nombreMoneda) {
+        Double acumTotalDeMoneda = 0.0;
+        for(Inversion inversion : getInversiones()){
+            if (nombreMoneda.toUpperCase().equals(inversion.getNombre())){
+                acumTotalDeMoneda = acumTotalDeMoneda + inversion.getCantInvertida();
+            }
+        }
+        return acumTotalDeMoneda;
+    }
+
+    @Override
     public Double precioEntradaPromedio(String nombreMoneda) {
         Double acumMonto = 0.0;
         Double acumPrecioPonderado = 0.0;

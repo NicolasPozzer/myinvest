@@ -49,6 +49,11 @@ public class InversionController {
         return inversionServ.totalInversionEnCartera();
     }
 
+    @GetMapping("/inversiones/totalmoneda/{nombreMoneda}")
+    public Double totalInversionPorMoneda(@PathVariable String nombreMoneda){
+        return inversionServ.totalInversionPorMoneda(nombreMoneda);
+    }
+
     @GetMapping("/inversiones/promentrada/{nombreMoneda}")
     public Double precioEntradaPromedio(@PathVariable String nombreMoneda){
         return inversionServ.precioEntradaPromedio(nombreMoneda);
