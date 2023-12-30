@@ -1,0 +1,6 @@
+com\demo\myinvest\MyinvestApplication.class
+com\demo\myinvest\repository\iInversionRepository.class
+com\demo\myinvest\controller\InversionController.class
+com\demo\myinvest\service\iInversionService.class
+com\demo\myinvest\model\Inversion.class
+com\demo\myinvest\service\InversionService.class
